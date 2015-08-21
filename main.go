@@ -19,7 +19,7 @@ var (
 func init() {
 	flag.StringVar(&flags.sort, "s", "stars", "sort, valid options: stars | forks")
 	flag.StringVar(&flags.lang, "l", "go", "language, valid options: go | c | php")
-	flag.IntVar(&flags.pageSize, "p", 50, "page size")
+	flag.IntVar(&flags.pageSize, "n", 50, "limit repos count")
 
 	flag.Parse()
 }
